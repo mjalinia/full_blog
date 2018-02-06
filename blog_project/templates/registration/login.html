@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class='login-face'>
+<h2>Login</h2>
+    <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <br>
+    <button type="submit" class="btn btn-info">Login</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    {% if not user.is_authenticated %}
+        Do not have an account? Make one  <a href="{% url 'signup' %}">Sign Up</a>
+        {%endif%}
+    </form>
+</div>
+
+        
+
+{% endblock content %}

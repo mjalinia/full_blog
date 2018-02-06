@@ -1,46 +1,219 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
+    direction: rtl;
+    background: url('https://blog.quera.ir/wp-content/uploads/2016/01/bg_top-3.png');
   }
+  .navbar.navbar-inverse {
+
+    background-color: transparent;
+    border-color: transparent;
+
+}
+hr{
+  color: rgb(53, 53, 53)
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #000;
+}
+.post-entry h2 a {
+  text-decoration: none;
+  color: #000;
+  padding-right: 30px;
   
-  header {
-    border-bottom: 1px solid #999;
-    margin-bottom: 2rem;
-    display: flex;
-  }
-  
-  header h1 a {
-    color: red;
-    text-decoration: none;
-  }
-  
-  .nav-left {
-    margin-right: auto;
-  }
-  
-  .nav-right {
-    display: flex;
-    padding-top: 2rem;
-  }
-  
-  .post-entry {
-    margin-bottom: 2rem;
-  }
-  
-  .post-entry h2 {
-    margin: .5rem 0;
-  }
-  
-  .post-entry h2 a, .post-entry h2 a:visited {
-    color: blue;
-    text-decoration: none;
-  }
-  
-  .post-entry p {
-    margin: 0;
-    font-weight: 400;
-  }
-  
+}
   .post-entry h2 a:hover {
-    color: red;
+    text-decoration: none;
+    color: #302d2dbd;
   }
+  .post-entry p {
+    color: #000;
+    padding-right: 30px;
+    
+}
+
+  #detail_title{
+    color: #000;
+    padding-right: 30px;
+  }
+  #detail_body{
+    color: #000;
+    font-size: 16px;
+    padding-right: 30px;
+  }
+  .detail_btn {
+    margin-right: 25px;
+}
+
+  #post-edit{
+    text-decoration: none;
+    color: #000
+  }
+  #post-delete{
+    text-decoration: none;
+    color: #000
+  }
+  #post-edit:hover{
+    text-decoration: none;
+    color: #38ff59bd
+  }
+  #post-delete:hover{
+    text-decoration: none;
+    color: #f80c0cbd
+  }
+.delete_page > h1{
+  color: #ff4242
+}
+.delete_page > form > p{
+  color: #000;
+  font-size: 17px;
+}
+.delete_page > form > .btn-danger{
+  color: #ffffff;
+  
+}
+
+
+.edit_page > h1{
+  color: #000000
+}
+.edit_page > form > p{
+  color: #000;
+  font-size: 17px;
+}
+.edit_page > form > .btn-success{
+  color: #ffffff;
+  
+}
+#id_body {
+  color: black;
+}
+
+#id_title {
+  color: #000;
+  margin-right: 1%;
+}
+
+.post-entry {
+  background-color: #f2f2f2;
+  border: 1px #fff solid;
+  border-radius: 0px;
+  border-right-color: #000 ;
+  border-left-color: #000 ;
+
+}
+.post-entry:hover {
+  background-color: #f2f2f2;
+  border: 1px #fff solid;
+  border-radius: 6px;
+  border-right-color: rgb(82, 253, 105) ;
+  border-left-color:  rgb(82, 253, 105) ; 
+  
+}
+
+.create_page > h1{
+  color: #000
+}
+label {
+  color: #000;
+}
+
+#id_owner {
+  border: 1px #000 solid;
+  padding-left: 18px;
+}
+
+.navbar-header .brand {
+  color: rgb(0, 0, 0);
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #000;
+  background-color: transparent;
+  border-bottom: 1px #000 solid;
+  border-bottom-color: #000;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+  background-color: transparent;
+  border-bottom: 1px #fff solid;
+  border-bottom-color: #fff;
+}
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.login-face {
+  background-color: #f3f3f3;
+  border-radius: 0px;
+  text-align: center;
+  margin: 0px 0px -63px 67px;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+#id_password {
+  margin: 13px 10px 2px -2px;
+}
+#id_password1 {
+  margin: 13px 10px 2px -2px;
+}
+
+.signup-face {
+  background-color: #f3f3f3;
+  border-radius: 0px;
+  margin: 0px 0px -63px 67px;
+  padding-top: 4%;
+  padding-right: 5%;
+  padding-bottom: 8%;
+  
+}
+
+
+.dropdown-toggle span {
+  color: #000;
+}
+.dropdown-toggle span {
+  color: #000;
+}
+#home_lable{
+  color: #000
+}
+
+.navbar_brand{
+  color: #000;
+  font-family: fantasy;
+  font-weight: bold;
+  font-size: 20px
+
+}
+#brand_lable{
+  color: #000000;
+}
+#brand_lable:hover{
+  color: rgb(113, 255, 108);
+  
+}
+
+#dropdown-toggle{
+  background-color:#f2f2f2;
+}
+#dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  line-height: 2.429;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+  background-color: #ededed;
+  text-align: center;
+}

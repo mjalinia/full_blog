@@ -1,18 +1,95 @@
 {% load staticfiles %}
-
+<!DOCTYPE html>
 <html>
-  <head>
+  <head lang="en">
+    <meta charset="utf-8">
     <title>Django blog</title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    
     
   </head>
   <body>
-    <header>
-      <h1><a href="/">Django blog</a></h1>
-    </header>
-    <div class="container">
-      {% block content %}
-      {% endblock content %}
-    </div>
+
+
+
+
+
+      <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" id='brand_lable' href="/">Django Blog</a>
+            </div>
+
+
+            <ul class="nav navbar-nav navbar-right">
+                {% if not user.is_authenticated %}
+                <li><a href="{% url 'signup' %}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                {%endif%}
+              
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+              <li><a id='home_lable' href="/">Home</a></li>
+              {% if user.is_authenticated %}
+
+              <li class="dropdown"><a class="dropdown-toggle" id="dropdown-toggle" data-toggle="dropdown" href="#"><span>Hi {{ user.username }}!</span> <span class="caret"></span></a>
+                <ul class="dropdown-menu" id="dropdown-menu">
+                  <li><a href="{% url 'logout' %}">logout</a></li>
+                  
+                
+              
+                  {% else %}
+                          
+                  <li><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span><span>You are not logged in  </span> Login</a></li>
+                  {%endif%}
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <br>
+      <br>
+
+
+      
+
+
+      <br>
+      <div class="container col-lg-9">
+        {% block content %}
+        {% endblock content %}
+      </div>
+      <div class="container col-lg-3">
+        {% block last%}
+        {%endblock %}
+      </div>
+    
+
+
+
+  
   </body>
 </html>
